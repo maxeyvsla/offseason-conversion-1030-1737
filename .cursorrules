@@ -1,0 +1,76 @@
+# Virtual Snow Offseason Conversion Project
+
+## Project Context
+This is a Next.js application for converting offseason ski/snowboard training sessions to winter sessions. It integrates with Acuity Scheduling API to check a certificate code for any remainning balance of offseason sessions. If there's a remaining balance, the user chooses one of two methods to convert their offseason sessions into winter sessions. This is accomplished through a multi-step form process.
+
+## Technology Stack
+- Next.js 13.5 with App Router
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- React Hook Form with Zod validation
+- Server-side API integration with Acuity Scheduling
+
+## Code Organization
+- Place API routes in app/api/[endpoint]/route.ts
+- Keep components modular and focused
+- Maintain utility functions in lib/ directory
+- Use 'use client' directive for client-side components
+
+## Coding Standards
+- Use TypeScript for type safety
+- Implement proper error handling with try/catch blocks
+- Follow React best practices for hooks and state management
+- Maintain consistent component structure:
+  - Props interface at top
+  - Hooks after interface
+  - Helper functions before return
+  - JSX in return statement
+
+## Component Guidelines
+- Keep components focused and single-purpose
+- Use shadcn/ui components for UI consistency
+- Implement proper form validation with Zod schemas
+- Handle loading and error states appropriately
+
+## API Integration
+- Use environment variables for sensitive data
+- Implement proper error handling for API responses
+- Follow RESTful principles for API routes
+- Cache API responses where appropriate
+
+## State Management
+- Use React Hook Form for form state
+- Implement proper loading states
+- Handle API errors gracefully
+- Show appropriate user feedback
+
+## Styling
+- Use Tailwind CSS for styling
+- Follow mobile-first responsive design
+- Maintain consistent spacing and layout
+- Use shadcn/ui theme variables
+
+## Error Handling
+- Implement proper error boundaries
+- Show user-friendly error messages
+- Log errors appropriately
+- Handle API errors gracefully
+
+## Testing
+- Write tests for critical functionality
+- Test API integrations
+- Implement proper error case testing
+- Test form validation logic
+
+## Security
+- Validate all user inputs
+- Sanitize API responses
+- Use proper CORS settings
+- Implement rate limiting where necessary
+
+## Performance
+- Optimize API calls
+- Implement proper caching
+- Minimize bundle size
+- Use proper loading states

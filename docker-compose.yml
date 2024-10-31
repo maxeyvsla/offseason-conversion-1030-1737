@@ -1,0 +1,15 @@
+services:
+  web:
+    build:
+      context: .
+      target: deps
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    command: npm run dev
+    environment:
+      - NODE_ENV=development
+      - NEXT_TELEMETRY_DISABLED=1
